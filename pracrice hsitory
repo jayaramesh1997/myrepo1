@@ -1,0 +1,80 @@
+mkdir aws
+   58  cd aws/
+   59  ll
+   60  git init
+   61  touch f1 f2
+   62  git add .
+   63  git commit -m "feat: newfiles created"
+   64  git log
+   65  ll
+   66  git branch
+   67  git remote add origin https://github.com/jayaramesh1997/myrepo1.git
+   68  git push origin master
+   69  git checkout -b dev
+   70  ll
+   71  touch f3 f4
+   72  git status
+   73  git add .
+   74  git commit -m "new files added"
+   75  git log
+   76  ll
+   77  git branch
+   78  git checkout master
+   79  ll
+   80  git checkout dev
+   81  git push origin dev
+   82  ll
+   83  git checkout master
+   84  ll
+   85  git merge dev
+   86  ll
+   87  git branch
+   88  git checkout dev
+   89  ll
+   90  git checkout -b qa
+   91  ll
+   92  touch f5 f6
+   93  ll
+   94  git add .
+   95  git commit -m "commit-1"
+   96  git log
+   97  ll
+   98  git checkout master
+   99  ll
+  100  git pull origin master
+  101  ll
+  102  git checkout qa
+  103  ll
+  104  touch f7
+  105  git checkout dev
+  106  ll
+  107  git checkout qa
+  108  git add .
+  109  git commit -m "commit-2"
+  110  ll
+  111  git checkout dev
+  112  ll
+  113  git checkout qa
+  114  ll
+  115  git push origin qa
+  116  ll
+  117  git push origin dev
+  118  git checkout dev
+  119  ll
+  120  git mergeqa
+  121  git merge qa
+  122  ll
+  123  git branch
+  124  git checkout master
+  125  ll
+  126  git pull origin master
+  127  ll
+  128  git branch
+  129  git checkout dev
+  130  ll
+  131  git checkout qa
+  132  ll
+  133  git checkout dev
+  134  git pull origin master
+  135  ll
+  136  git push origin dev
